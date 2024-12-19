@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Тренажёр арифметики</string>
+    <string-array name="levels">
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+        <item>Уровень 4</item>
+        <item>Уровень 5</item>
+    </string-array>
+</resources>
