@@ -4,7 +4,6 @@
     android:background="#bbbbbb"
     android:padding="16dp">
 
-    <!-- Текущий счет -->
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="48dp"
@@ -28,7 +27,6 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Рекорд -->
     <TextView
         android:id="@+id/tv_record"
         android:layout_width="wrap_content"
