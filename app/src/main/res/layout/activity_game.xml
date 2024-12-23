@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbbbbb"
+    android:padding="16dp">
+
+    <!-- Текущий счет -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Назад"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Очки: 0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Рекорд -->
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:text="Рекорд: 0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back"
+        android:paddingBottom="16dp"
+        android:text="Пример: 5 + 3"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        android:hint="Ваш ответ"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_answer"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orange_500"
+        android:padding="12dp"
+        android:text="Проверить"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_submit"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_feedback_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>
