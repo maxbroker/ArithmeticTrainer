@@ -47,13 +47,8 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void playSUSUGIMNSound() {
-        int[] SUSUGIMN = {R.raw.susu};
-
-        int randomSound = SUSUGIMN[new Random().nextInt(SUSUGIMN.length)];
-
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, randomSound);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,  R.raw.susu);
         mediaPlayer.start();
-
         mediaPlayer.setOnCompletionListener(mp -> mediaPlayer.release());
     }
 
@@ -162,7 +157,7 @@ public class GameActivity extends AppCompatActivity {
         Random random = new Random();
 
         if (level >= 5) {
-            int taskType = random.nextInt(4); // 0, 1, 2, 4
+            int taskType = random.nextInt(4);
 
             if (taskType == 0) {
                 generateTriangleQuestion(random);
@@ -184,7 +179,7 @@ public class GameActivity extends AppCompatActivity {
                 generateBasicMathQuestion(random);
             }
         } else {
-            int taskType = random.nextInt(2);
+            int taskType = random.nextInt(8);
 
             if (taskType == 0) {
                 generateRectangleQuestion(random, false);
