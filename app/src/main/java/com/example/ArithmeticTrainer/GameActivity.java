@@ -33,8 +33,8 @@ public class GameActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
 
     private void playRandomSound(boolean isCorrect) {
-        int[] correctSounds = {R.raw.correct1, R.raw.correct2, R.raw.correct2}; // Список правильных мелодий
-        int[] wrongSounds = {R.raw.wrong1, R.raw.wrong3};       // Список грустных мелодий
+        int[] correctSounds = {R.raw.correct1, R.raw.correct2, R.raw.correct3, R.raw.correct4, R.raw.correct5};
+        int[] wrongSounds = {R.raw.wrong1, R.raw.wrong2, R.raw.wrong3, R.raw.wrong4, R.raw.wrong5};
 
         int[] soundsToPlay = isCorrect ? correctSounds : wrongSounds;
 
@@ -116,7 +116,7 @@ public class GameActivity extends AppCompatActivity {
 
         generateQuestion();
 
-        ImageButton backButton = findViewById(R.id.btn_back);
+        Button backButton = findViewById(R.id.btn_back);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
