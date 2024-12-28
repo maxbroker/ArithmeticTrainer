@@ -103,7 +103,6 @@ public class GameActivity extends AppCompatActivity {
         tvFeedback = findViewById(R.id.tv_feedback);
         tvScore = findViewById(R.id.tv_score);
         tvRecord = findViewById(R.id.tv_record);
-
         sharedPreferences = getSharedPreferences("ArithmeticTrainerPrefs", MODE_PRIVATE);
         record = sharedPreferences.getInt("record", 0);
         tvRecord.setText("Рекорд: " + record);
